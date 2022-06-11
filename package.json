@@ -1,0 +1,54 @@
+{
+  "name": "tedir-draggable",
+  "version": "0.0.1-wood-0",
+  "description": "Tedir Draggable is a drag and drop component for Vue 3 & Web Components",
+  "main": "dist/vue/tedir-draggable-vue.umd.js",
+  "module": "dist/vue/tedir-draggable-vue.es.js",
+  "unpkg": "dist/vue/tedir-draggable-vue.umd.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue/tedir-draggable-vue.es.js",
+      "require": "./dist/vue/tedir-draggable-vue.umd.js"
+    },
+    "./web": {
+      "import": "./dist/web/tedir-draggable-web.es.js",
+      "require": "./dist/web/tedir-draggable-web.umd.js"
+    },
+    "./css": "./dist/vue/style.css"
+  },
+  "scripts": {
+    "dev-vue": "vite --config vite-vue-config.ts",
+    "build-vue": "vue-tsc --noEmit && vite build --config vite-vue-config.ts",
+    "build-web": "vue-tsc --noEmit && vite build --config vite-web-config.ts",
+    "preview-vue": "vite preview --config vite-vue-config.ts"
+  },
+  "files": [
+    "src/alga/*.alga",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedirghazali/draggable.git"
+  },
+  "keywords": [
+    "calendar",
+    "event-calendar",
+    "event",
+    "vue3calendar"
+  ],
+  "author": "Tedir Ghazali",
+  "license": "SEE LICENSE IN license.txt",
+  "bugs": {
+    "url": "https://github.com/tedirghazali/draggable/issues"
+  },
+  "dependencies": {
+    "alga-css": "^1.0.0-iron-4",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
+}
